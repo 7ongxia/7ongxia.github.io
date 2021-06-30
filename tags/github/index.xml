@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on Jong Kim</title>
+    <link>https://7ongxia.github.io/tags/github/</link>
+    <description>Recent content in github on Jong Kim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 30 Jun 2021 18:02:00 +0800</lastBuildDate><atom:link href="https://7ongxia.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Blog with Hugo and Github in 30 minutes</title>
+      <link>https://7ongxia.github.io/posts/hugo_github/</link>
+      <pubDate>Wed, 30 Jun 2021 18:02:00 +0800</pubDate>
+      
+      <guid>https://7ongxia.github.io/posts/hugo_github/</guid>
+      <description>markdown shortcode
+You can start your own blog by using Hugo and Github in 30 minutes. Hugo is one of the world’s fastest framework for building websites. This quick start uses macOS in the examples. Let&amp;rsquo;s start!
+Steps
+ Install Hugo Create a site and add a theme Add Some Content Test your site locally Create two Github repositories Modify the config.toml file Build your site Deploy your site with GitHub Pages Deployment Automation!</description>
+    </item>
+    
+  </channel>
+</rss>

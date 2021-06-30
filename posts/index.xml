@@ -1,0 +1,170 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Jong Kim</title>
+        <link>https://7ongxia.github.io/posts/</link>
+        <description>Recent content in Posts on Jong Kim</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Wed, 30 Jun 2021 18:02:00 +0800</lastBuildDate>
+        <atom:link href="https://7ongxia.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Creating a Blog with Hugo and Github in 30 minutes</title>
+            <link>https://7ongxia.github.io/posts/hugo_github/</link>
+            <pubDate>Wed, 30 Jun 2021 18:02:00 +0800</pubDate>
+            
+            <guid>https://7ongxia.github.io/posts/hugo_github/</guid>
+            <description>markdown shortcode
+You can start your own blog by using Hugo and Github in 30 minutes. Hugo is one of the world’s fastest framework for building websites. This quick start uses macOS in the examples. Let&amp;rsquo;s start!
+Steps
+ Install Hugo Create a site and add a theme Add Some Content Test your site locally Create two Github repositories Modify the config.toml file Build your site Deploy your site with GitHub Pages Deployment Automation!</description>
+            <content type="html"><![CDATA[<p>markdown
+shortcode</p>
+<p>You can start your own blog by using Hugo and Github in 30 minutes.
+Hugo is one of the world’s fastest framework for building websites.
+This quick start uses macOS in the examples.
+Let&rsquo;s start!</p>
+<p><strong>Steps</strong></p>
+<ol>
+<li>Install <code>Hugo</code></li>
+<li>Create a site and add a theme</li>
+<li>Add Some Content</li>
+<li>Test your site locally</li>
+<li>Create two Github repositories</li>
+<li>Modify the <code>config.toml</code> file</li>
+<li>Build your site</li>
+<li>Deploy your site with <code>GitHub Pages</code></li>
+<li>Deployment Automation!</li>
+</ol>
+<h2 id="1-install-hugo">1. Install Hugo</h2>
+<blockquote>
+<p><code>Homebrew</code> and <code>MacPorts</code>, package managers for <code>macOS</code>, can be installed from <a href="https://brew.sh/">brew.sh</a> or <a href="https://www.macports.org/">macports.org</a> respectively. See <a href="https://gohugo.io/getting-started/installing">install</a> if you are running Windows etc.</p>
+</blockquote>
+<pre><code>brew install hugo
+# or
+port install hugo
+
+# To verify your new install
+hugo version
+</code></pre><h2 id="2-create-a-new-site-and-add-a-theme">2. Create a New Site and add a theme</h2>
+<p>The below will create a new Hugo site in a folder named &ldquo;quickstart&rdquo;.</p>
+<pre><code>hugo new site quickstart
+</code></pre><p>See <a href="https://themes.gohugo.io/">themes.gohugo.io</a> for a list of themes to consider. This quickstart uses the cool <a href="https://themes.gohugo.io/hugo-theme-hello-friend-ng">hello-friend-ng</a> theme.</p>
+<p>First, download the theme from GitHub and add it to your site’s themes directory:</p>
+<pre><code>cd quickstart
+git init
+git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
+</code></pre><p>Then, add the theme to the site configuration, <code>config.toml</code>:</p>
+<pre><code>echo theme = \&quot;hello-friend-ng\&quot; &gt;&gt; config.toml
+</code></pre><h2 id="3-add-some-content">3. Add Some Content</h2>
+<p>You can use the <code>new</code> command to do a few things for you (like add title and date):
+This command will create content files in <code>content</code> directory and provide metadata in them.</p>
+<pre><code># run the command in the root directory of your site
+hugo new posts/my-first-post.md
+</code></pre><p>Edit the newly created content file, <code>my-first-post.md</code>, if you want, it will start with something like this:</p>
+<pre><code>---
+title: &quot;My First Post&quot;
+date: 2021-06-30T08:47:11+01:00
+draft: true
+---
+</code></pre><blockquote>
+<p>Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info <a href="https://gohugo.io/getting-started/usage/#draft-future-and-expired-content">here</a>.</p>
+</blockquote>
+<h2 id="4-test-your-site-locally">4. Test your site locally</h2>
+<p>Now, start the Hugo server:</p>
+<pre><code># with drafts enabled:
+hugo server -D
+# with drafts disabled:
+hugo server
+</code></pre><p>Navigate to your new site at <a href="http://localhost:1313">http://localhost:1313</a>.</p>
+<p>Feel free to edit or add new content and simply refresh in browser to see changes quickly (You might need to force refresh in webbrowser, something like Ctrl-R usually works).</p>
+<h2 id="5-create-two-github-repositories">5. Create two Github repositories</h2>
+<p>Go to GitHub and create two new repository.</p>
+<ul>
+<li>Create a first Github repository: &ldquo;{yourGithubID}.github.io&rdquo;</li>
+<li>Create a second Github repository: &ldquo;{yourGithubID}_blog&rdquo;</li>
+</ul>
+<p>The first repository will directly host your site with <code>GitHub Pages</code>.
+The second repository is going to host your source code so every time you want to add a new post, you will push the changes into this repository.</p>
+<h2 id="6-modify-the-configtoml-file">6. Modify the config.toml file</h2>
+<p>Once the repository is created, you HAVE to modify the <code>config.toml</code> found on the root directory of your site. You need to modify the <code>baseUrl</code> property to point to your <code>GitHub Pages</code>.</p>
+<pre><code>baseURL      = &quot;https://{yourGithubID}.github.io/&quot;
+title        = &quot;Jong Kim&quot;
+languageCode = &quot;en-us&quot;
+theme        = &quot;hello-friend-ng&quot;
+paginate     = 10
+</code></pre><h2 id="7-build-your-site">7. Build your site</h2>
+<p>To build your site:</p>
+<pre><code>hugo
+</code></pre><p>The output from the build will be put into <code>./public/</code> directory. The <code>public</code> directory is what you are going to publish into GitHub.</p>
+<h2 id="8-deploy-your-site-with-github-pages">8. Deploy your site with GitHub Pages</h2>
+<p>It’s time to upload the contents of the <code>./public</code> directory into the GitHub repository.</p>
+<pre><code>cd quickstart/public
+git init
+git remote add origin https://github.com/{yourGithubID}/{yourGithubID}.github.io.git
+git add .
+git commit -m &quot;Initial commit&quot;
+git push --set-upstream origin main
+</code></pre><p>After pushing the code into GitHub, you still need to modify the Repository settings.
+Change the setting to &ldquo;main branch&rdquo; found in:</p>
+<ul>
+<li><code>Settings &gt; Options &gt; GitHub pages &gt; Source -&gt; main branch</code></li>
+</ul>
+<p>Just wait a couple of minutes for the page to refresh and browse to:
+<a href="https://%7ByourGithubID%7D.github.io">https://{yourGithubID}.github.io</a>. You will see your website is running properly.</p>
+<h2 id="9-deployment-automation">9. Deployment Automation!</h2>
+<p>The site is up and running and everything works great!
+But be aware that right now the source code is only on your local machine.</p>
+<p>So your final step is going to be:</p>
+<ul>
+<li>After you push the changes to <code>{yourGithubID}_blog</code> repository, <code>Github Action</code> will grab the content from <code>{yourGithubID}_blog</code> and publish the output into your <code>{yourGithubID}.github.io</code> repository.</li>
+</ul>
+<p>First of all, create a <code>.gitignore</code> file and ignore <code>./public</code> folder.</p>
+<pre><code>echo &quot;public/&quot; &gt;&gt; .gitignore
+</code></pre><p>After that, push your source code into the <code>{yourGithubID}_blog</code> repository.</p>
+<pre><code>cd quickstart
+echo &quot;public/&quot; &gt;&gt; .gitignore
+git init
+git remote add origin https://github.com/{yourGithubID}/{yourGithubID}_blog.git
+git add .
+git commit -m &quot;Add site contents&quot;
+git push --set-upstream origin main
+</code></pre><p>The last step is setting <code>GitHub Action</code>.
+<code>GitHub Action</code> is going to grab the content from <code>{yourGithubID}_blog</code> repository, build and push the output into <code>{yourGithubID}.github.io</code> repository.</p>
+<pre><code>name: hugo CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true 
+          fetch-depth: 1   
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      - name: Build
+        run: hugo
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          external_repository: {yourGithubID}/{yourGithubID}.github.io
+          publish_branch: main
+          publish_dir: ./public
+</code></pre>]]></content>
+        </item>
+        
+    </channel>
+</rss>

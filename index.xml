@@ -6,6 +6,48 @@
     <description>Recent content on Jong Kim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright><atom:link href="https://7ongxia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 30 Jun 2021 18:03:19 +0800</lastBuildDate><atom:link href="https://7ongxia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://7ongxia.github.io/about/</link>
+      <pubDate>Wed, 30 Jun 2021 18:07:21 +0800</pubDate>
+      
+      <guid>https://7ongxia.github.io/about/</guid>
+      <description>👋 Hi, I’m Jong Kim 👀 I’m interested in learning English and investing 🌱 I’m currently learning GCP, AWS, React and more 🎯 Ultimate Goal : Cloud engineer with fluent English 📫 Right now, I&amp;rsquo;m based in Hong Kong  &amp;ndash;
+I&amp;rsquo;ve been working as a backend developer and a cloud engineer for some length of time. I&amp;rsquo;m also have my own random thoughts journal, mostly in Korean. In my free time, I run, play bass guitar, or learn new things.</description>
+    </item>
+    
+    <item>
+      <title>기록의 의미</title>
+      <link>https://7ongxia.github.io/journals/%EA%B8%B0%EB%A1%9D%EC%9D%98_%EC%9D%98%EB%AF%B8/</link>
+      <pubDate>Wed, 30 Jun 2021 18:03:19 +0800</pubDate>
+      
+      <guid>https://7ongxia.github.io/journals/%EA%B8%B0%EB%A1%9D%EC%9D%98_%EC%9D%98%EB%AF%B8/</guid>
+      <description>꾸준하고 반복적인 훈련은 분명히 능력을 향상시킨다.
+운동, 공부, 연주 등등 모든 분야에 적용 가능하다.
+물론 사고능력 또한 훈련이 가능하다.
+깊게, 자주 사고를 하면 된다.
+말이야 쉽지, 특히 현 시대에서는 상당히 힘들다.
+24시간 함께하는 스마트폰의 넷플릭스, 유튜브, 인스타그램, 틱톡 &amp;hellip;
+심지어 요즘 나는 유튜브 영상의 길이가 10분 이상이면, 끝까지 제대로 집중해서 보기도 힘들다.
+1.25배속은 필수 ㅋㅋ;
+&amp;ndash;
+세상은, 소수의 지성이 다수의 무지성을 지배하는 흐름으로 가고있다고 생각한다.
+초등학교, 중학교 때에는 책을 정말 즐겨 읽었다.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Blog with Hugo and Github in 30 minutes</title>
+      <link>https://7ongxia.github.io/posts/hugo_github/</link>
+      <pubDate>Wed, 30 Jun 2021 18:02:00 +0800</pubDate>
+      
+      <guid>https://7ongxia.github.io/posts/hugo_github/</guid>
+      <description>markdown shortcode
+You can start your own blog by using Hugo and Github in 30 minutes. Hugo is one of the world’s fastest framework for building websites. This quick start uses macOS in the examples. Let&amp;rsquo;s start!
+Steps
+ Install Hugo Create a site and add a theme Add Some Content Test your site locally Create two Github repositories Modify the config.toml file Build your site Deploy your site with GitHub Pages Deployment Automation!</description>
+    </item>
+    
   </channel>
 </rss>
