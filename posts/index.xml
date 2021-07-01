@@ -15,13 +15,10 @@
             <pubDate>Wed, 30 Jun 2021 18:02:00 +0800</pubDate>
             
             <guid>https://7ongxia.github.io/posts/creating_a_blog_with_hugo_and_github_in_30_minutes/</guid>
-            <description>markdown shortcode
-You can start your own blog by using Hugo and Github in 30 minutes. Hugo is one of the world’s fastest framework for building websites. This quick start uses macOS in the examples. Let&amp;rsquo;s start!
+            <description>You can start your own blog by using Hugo and Github in 30 minutes. Hugo is one of the world’s fastest framework for building websites. This quick start uses macOS in the examples. Let&amp;rsquo;s start!
 Steps
  Install Hugo Create a site and add a theme Add Some Content Test your site locally Create two Github repositories Modify the config.toml file Build your site Deploy your site with GitHub Pages Deployment Automation!</description>
-            <content type="html"><![CDATA[<p>markdown
-shortcode</p>
-<p>You can start your own blog by using Hugo and Github in 30 minutes.
+            <content type="html"><![CDATA[<p>You can start your own blog by using Hugo and Github in 30 minutes.
 Hugo is one of the world’s fastest framework for building websites.
 This quick start uses macOS in the examples.
 Let&rsquo;s start!</p>
@@ -163,7 +160,14 @@ jobs:
           external_repository: {yourGithubID}/{yourGithubID}.github.io
           publish_branch: main
           publish_dir: ./public
-</code></pre>]]></content>
+</code></pre><hr>
+<p><strong>Congratulations!</strong></p>
+<p>Now you can write some posts locally and simply publish your contents in a minute. <code>Github Action</code> will automatically deploy your site when you push to your repository.</p>
+<p>Thank you for reading!</p>
+<h2 id="useful-websites">Useful websites</h2>
+<p><a href="https://www.markdownguide.org/basic-syntax#links">Markdown Guide</a></p>
+<p><a href="https://gohugo.io/content-management/shortcodes/">Shortcodes</a></p>
+]]></content>
         </item>
         
     </channel>

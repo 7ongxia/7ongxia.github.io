@@ -14,8 +14,7 @@
       <pubDate>Wed, 30 Jun 2021 18:02:00 +0800</pubDate>
       
       <guid>https://7ongxia.github.io/posts/creating_a_blog_with_hugo_and_github_in_30_minutes/</guid>
-      <description>markdown shortcode
-You can start your own blog by using Hugo and Github in 30 minutes. Hugo is one of the world’s fastest framework for building websites. This quick start uses macOS in the examples. Let&amp;rsquo;s start!
+      <description>You can start your own blog by using Hugo and Github in 30 minutes. Hugo is one of the world’s fastest framework for building websites. This quick start uses macOS in the examples. Let&amp;rsquo;s start!
 Steps
  Install Hugo Create a site and add a theme Add Some Content Test your site locally Create two Github repositories Modify the config.toml file Build your site Deploy your site with GitHub Pages Deployment Automation!</description>
     </item>
