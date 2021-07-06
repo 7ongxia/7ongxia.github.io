@@ -2,14 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://7ongxia.github.io/about/</loc>
-    <lastmod>2021-06-30T18:07:21+08:00</lastmod>
-  </url><url>
     <loc>https://7ongxia.github.io/</loc>
-    <lastmod>2021-06-30T18:03:19+08:00</lastmod>
+    <lastmod>2021-07-06T23:05:51+08:00</lastmod>
   </url><url>
     <loc>https://7ongxia.github.io/journals/</loc>
-    <lastmod>2021-06-30T18:03:19+08:00</lastmod>
+    <lastmod>2021-07-06T23:05:51+08:00</lastmod>
+  </url><url>
+    <loc>https://7ongxia.github.io/journals/%EC%B2%AB_%EC%B6%9C%EA%B7%BC/</loc>
+    <lastmod>2021-07-06T23:05:51+08:00</lastmod>
+  </url><url>
+    <loc>https://7ongxia.github.io/about/</loc>
+    <lastmod>2021-06-30T18:07:21+08:00</lastmod>
   </url><url>
     <loc>https://7ongxia.github.io/journals/%EA%B8%B0%EB%A1%9D%EC%9D%98_%EC%9D%98%EB%AF%B8/</loc>
     <lastmod>2021-06-30T18:03:19+08:00</lastmod>
